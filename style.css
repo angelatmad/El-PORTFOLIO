@@ -1,0 +1,220 @@
+/* Resetting some basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and general layout */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f4f6; /* Soft light pink background */
+  color: #333;
+}
+
+/* Header and Navigation Bar */
+header {
+  background: #f7a8b8; /* Pastel pink */
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  color: #f2d6d6; /* Soft light pink hover effect */
+}
+
+/* Hero Section */
+.hero {
+  background: #d3a9f2; /* Soft lavender */
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.cta-btn {
+  background: #ffccf9; /* Very light pink */
+  color: #d3a9f2; /* Lavender */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.cta-btn:hover {
+  background: #d3a9f2; /* Lavender */
+  color: #fff;
+}
+
+/* About Section */
+.about {
+  padding: 50px 20px;
+  text-align: center;
+  background: #fff; /* White background for clean look */
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #d3a9f2; /* Lavender */
+}
+
+.about p {
+  font-size: 1.2rem;
+  width: 60%;
+  margin: 0 auto;
+  line-height: 1.5;
+  color: #555;
+}
+
+.projects {
+  background: #f9f4f6; /* Soft light pink background */
+  padding: 50px 20px;
+}
+
+.projects h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #d3a9f2; /* Lavender */
+}
+
+.project-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;  /* Adds a gap between cards */
+}
+
+.project-card {
+  background: #fff;
+  width: 30%;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;  /* Added transition for hover effect */
+}
+
+.project-card:hover {
+  transform: scale(1.05);  /* Slightly enlarge the card when hovered */
+}
+
+.project-card img {
+  width: 100%;
+  max-width: 100%;  /* Ensure images don't exceed the width of their container */
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;  /* Ensures the image covers the container without stretching */
+}
+
+.project-card h3 {
+  margin-top: 10px;
+  color: #d3a9f2; /* Lavender */
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #777; /* Soft gray for text */
+}
+
+/* Ensure the cards stack nicely on smaller screens */
+@media (max-width: 768px) {
+  .project-card {
+    width: 45%;  /* Make each card 45% width on medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .project-card {
+    width: 100%;  /* Make each card 100% width on smaller screens */
+  }
+}
+
+
+/* Contact Section */
+.contact {
+  padding: 50px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #d3a9f2; /* Lavender */
+}
+
+.contact p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #777;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+form label {
+  display: block;
+  font-size: 1rem;
+  margin: 10px 0 5px;
+  color: #d3a9f2; /* Lavender */
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  background: #d3a9f2; /* Lavender */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #000;
+}
